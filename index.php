@@ -3,7 +3,7 @@
 include_once "config.php";
 $kac_var = $db->query("SELECT COUNT(mutluluk_ip) as mi FROM mutluluk_dileyenler")->fetch(PDO::FETCH_ASSOC);
 
-$tarih1 = new DateTime("2018-08-28");
+$tarih1 = new DateTime("2024-02-5");
 $tarih2 = new DateTime(date("Y-m-d"));
 $interval = $tarih1->diff($tarih2);
 ?>
@@ -16,7 +16,7 @@ $interval = $tarih1->diff($tarih2);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>AyCan ❤️ <?php echo $interval->days ?> </title>
+    <title>Didem ❤️ <?php echo $interval->days ?> </title>
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
